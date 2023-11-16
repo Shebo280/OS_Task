@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Testing actions"
-        run: pwd
-      - name: "Testing Printing"
-        run: echo Shebooo
+      - name: "Before"
+        run: ls
+      - uses: actions/checout@v3
+      - name: "after"
+        run: ls
