@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: "Before"
         run: ls
-      - uses: actions/checout@v3
-      - name: "after"
+      - uses: actions/checkout@v3
+      - name: "After"
         run: ls
